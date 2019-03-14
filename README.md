@@ -13,7 +13,10 @@ If no input file is provided, `linguex.py` reads from `stdin`.
 Sample calls for example files:
 ```bash
 > python linguex.py example.md | pandoc -f markdown+example_lists+raw_tex -o example.tex
+
 > python linguex.py example.md | pandoc -f markdown+example_lists+raw_tex -o example.pdf
+
+> pandoc -s -f markdown+example_lists+raw_tex-auto_identifiers -o example.docx example.txt
 ```
 
 ## Supported Markdown syntax and `linguex` LaTeX replacement
