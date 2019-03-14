@@ -58,3 +58,8 @@ Otherwise (i.e. if input is `stdin`) the label contains just the prefix `ex`:
 ```
     {ex:label}
 ```
+
+## FAQ
+
+### Why is this not a filter?
+Pandoc inserts example numbers as raw text during Markdown parsing, so the labels are lost and a filter cannot determine if a reference to an example is actually a reference or just a number looking like a reference.
